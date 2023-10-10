@@ -1,0 +1,72 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+#section1 {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-image: url("");
+}
+
+#section2 {
+  background-color: #e9e9e9;
+}
+
+#section3 {
+  background-color: #d9d9d9;
+}
+
+body {
+  background-image: url("https://wp-s.ru/wallpapers/0/17/473239819226897/belo-ryzhij-kot-na-divane-lezhit.jpg");
+  background-size: 130%;
+  background-position: center;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide-in-next {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-out-next {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-in-prev {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-out-prev {
+  transform: translateX(100%);
+  opacity: 0;
+}
